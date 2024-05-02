@@ -1,4 +1,4 @@
-# SatelliTrack 🛰️
+# Apple SatelliTrack 🛰️
 
 > Track satellites in real time with your iPhone 📱
 
