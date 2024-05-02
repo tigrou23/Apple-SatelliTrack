@@ -3,8 +3,7 @@
 > Track satellites in real time with your iPhone 🛰️
 
 ## Preview
-![Capture d’écran 2024-05-02 à 20 58 04](https://github.com/tigrou23/Apple-SatelliTrack/assets/54220880/b19bb6f3-a3a6-4683-8e8b-c720994ed095)
-
+![327555130-b19bb6f3-a3a6-4683-8e8b-c720994ed095](https://github.com/tigrou23/Apple-SatelliTrack/assets/54220880/c54327e5-352a-488f-9d4f-ae482bb28cb2)
 ## Presentation
 SatelliTack is an iOS app that allows you to track satellites in real time. It gets the data from [CelesTrak](https://www.celestrak.com/) and displays it in a user-friendly way with a map. 
 
