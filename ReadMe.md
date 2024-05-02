@@ -18,8 +18,8 @@ Thanks to [SGP4](https://en.wikipedia.org/wiki/Simplified_perturbations_models) 
 ___
 ### // TODO:
 - [ ] Add the Gen2 GlobalStar constellation to the app
+- [ ] Stop removing all annotations and only update the existing ones
 - [ ] Add the user location annotation
 - [ ] Add a button to center the map on the user location
 - [ ] Add the satellite name to the annotation
-- [ ] Stop removing all annotations and only update the existing ones
 - [ ] Add a search bar to filter the satellites by name
