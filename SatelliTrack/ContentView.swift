@@ -19,11 +19,11 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
                 .onAppear {
                     DownloadManager.shared.downloadFile()
-                    // Récupérer l'URL du fichier téléchargé
+                    // Get the file URL
                     let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
                     let fileURL = documentsURL.appendingPathComponent(FILE_NAME)
                                 
-                    // Parser le fichier TLE pour extraire les informations des satellites
+                    // Parse the TLE file to extract the satellite information
                     if let satellites = TLEParser.parseTLEFile(at: fileURL) {
                         self.satellites = satellites
                     }
