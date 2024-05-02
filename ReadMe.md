@@ -11,12 +11,13 @@ The app is written in [Swift](https://www.swift.org/), [SwiftUI](https://develop
 
 ## Data and Calculations
 
-We are using the [CelesTrak API](https://www.celestrak.com/NORAD/elements/) to get the satellite data. The API provides the TLE (Two-Line Element Set) data for the satellites. The TLE data is used to calculate the satellite position and display it on the map.
+We are using the [NORAD GP Element Sets](https://www.celestrak.com/NORAD/elements/) to get the satellite data. The API provides the TLE (Two-Line Element Set) data for the satellites. The TLE data is used to calculate the satellite position and display it on the map.
 
 Thanks to [SGP4](https://en.wikipedia.org/wiki/Simplified_perturbations_models) (Simplified General Perturbations 4) we can calculate the satellite position with high accuracy. We are using the Swift package [SGP4-Swift](https://swiftpackageindex.com/csanfilippo/swift-sgp4).
 
 ___
 ### // TODO:
+- [ ] Add the Gen2 GlobalStar constellation to the app
 - [ ] Add the user location annotation
 - [ ] Add a button to center the map on the user location
 - [ ] Add the satellite name to the annotation
