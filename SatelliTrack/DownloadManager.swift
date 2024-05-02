@@ -11,7 +11,7 @@ import Foundation
 class DownloadManager {
     static let shared = DownloadManager()
     
-    let CELESTRAK_URL = URL(string: "https://www.celestrak.com/NORAD/elements/amateur.txt")!
+    let CELESTRAK_URL = URL(string: "https://celestrak.org/NORAD/elements/gp.php?GROUP=globalstar&FORMAT=tle")!
     let FILE_NAME = "satellite_data.txt"
     
     /// Download the TLE file from Celestrak
