@@ -21,7 +21,7 @@ struct ContentView: View {
                     DownloadManager.shared.downloadFile()
                     // Récupérer l'URL du fichier téléchargé
                     let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-                    let fileURL = documentsURL.appendingPathComponent("satellite_data.txt")
+                    let fileURL = documentsURL.appendingPathComponent(FILE_NAME)
                                 
                     // Parser le fichier TLE pour extraire les informations des satellites
                     if let satellites = TLEParser.parseTLEFile(at: fileURL) {
