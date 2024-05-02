@@ -1,0 +1,15 @@
+{
+  "originHash" : "881ce78a68d34af05cc4d07f201a998aebabe7d2197963202c4b2e9b23776527",
+  "pins" : [
+    {
+      "identity" : "swift-sgp4",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/csanfilippo/swift-sgp4.git",
+      "state" : {
+        "revision" : "cbc9a67b1851541d939b0106e003d85c7257ce63",
+        "version" : "1.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}

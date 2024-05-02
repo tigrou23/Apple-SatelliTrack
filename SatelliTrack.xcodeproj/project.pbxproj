@@ -11,6 +11,10 @@
 		9A3F97362BE3FA4000AF1CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97352BE3FA4000AF1CDF /* ContentView.swift */; };
 		9A3F97382BE3FA4100AF1CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3F97372BE3FA4100AF1CDF /* Assets.xcassets */; };
 		9A3F973B2BE3FA4100AF1CDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3F973A2BE3FA4100AF1CDF /* Preview Assets.xcassets */; };
+		9A3F97422BE3FAD400AF1CDF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97412BE3FAD400AF1CDF /* MapView.swift */; };
+		9A3F97442BE3FB0B00AF1CDF /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97432BE3FB0B00AF1CDF /* DownloadManager.swift */; };
+		9A3F97462BE3FB3500AF1CDF /* TLEParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97452BE3FB3500AF1CDF /* TLEParser.swift */; };
+		9A3F97492BE3FBC500AF1CDF /* SGPKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9A3F97482BE3FBC500AF1CDF /* SGPKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		9A3F97352BE3FA4000AF1CDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A3F97372BE3FA4100AF1CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3F973A2BE3FA4100AF1CDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A3F97412BE3FAD400AF1CDF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9A3F97432BE3FB0B00AF1CDF /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		9A3F97452BE3FB3500AF1CDF /* TLEParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLEParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3F97492BE3FBC500AF1CDF /* SGPKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				9A3F97332BE3FA4000AF1CDF /* SatelliTrackApp.swift */,
+				9A3F97412BE3FAD400AF1CDF /* MapView.swift */,
+				9A3F97432BE3FB0B00AF1CDF /* DownloadManager.swift */,
+				9A3F97452BE3FB3500AF1CDF /* TLEParser.swift */,
 				9A3F97352BE3FA4000AF1CDF /* ContentView.swift */,
 				9A3F97372BE3FA4100AF1CDF /* Assets.xcassets */,
 				9A3F97392BE3FA4100AF1CDF /* Preview Content */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = SatelliTrack;
+			packageProductDependencies = (
+				9A3F97482BE3FBC500AF1CDF /* SGPKit */,
+			);
 			productName = SatelliTrack;
 			productReference = 9A3F97302BE3FA4000AF1CDF /* SatelliTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 9A3F97272BE3FA4000AF1CDF;
+			packageReferences = (
+				9A3F97472BE3FBC500AF1CDF /* XCRemoteSwiftPackageReference "swift-sgp4" */,
+			);
 			productRefGroup = 9A3F97312BE3FA4000AF1CDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3F97362BE3FA4000AF1CDF /* ContentView.swift in Sources */,
+				9A3F97422BE3FAD400AF1CDF /* MapView.swift in Sources */,
 				9A3F97342BE3FA4000AF1CDF /* SatelliTrackApp.swift in Sources */,
+				9A3F97442BE3FB0B00AF1CDF /* DownloadManager.swift in Sources */,
+				9A3F97462BE3FB3500AF1CDF /* TLEParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A3F97472BE3FBC500AF1CDF /* XCRemoteSwiftPackageReference "swift-sgp4" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/csanfilippo/swift-sgp4.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A3F97482BE3FBC500AF1CDF /* SGPKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A3F97472BE3FBC500AF1CDF /* XCRemoteSwiftPackageReference "swift-sgp4" */;
+			productName = SGPKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A3F97282BE3FA4000AF1CDF /* Project object */;
 }
