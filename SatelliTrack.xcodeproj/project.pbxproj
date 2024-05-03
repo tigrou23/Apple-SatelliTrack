@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A01C85A2BE4E122003D865A /* TimerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01C8592BE4E122003D865A /* TimerStorage.swift */; };
 		9A3F97342BE3FA4000AF1CDF /* SatelliTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97332BE3FA4000AF1CDF /* SatelliTrackApp.swift */; };
 		9A3F97362BE3FA4000AF1CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F97352BE3FA4000AF1CDF /* ContentView.swift */; };
 		9A3F97382BE3FA4100AF1CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3F97372BE3FA4100AF1CDF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A01C8592BE4E122003D865A /* TimerStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStorage.swift; sourceTree = "<group>"; };
 		9A3F97302BE3FA4000AF1CDF /* SatelliTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SatelliTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3F97332BE3FA4000AF1CDF /* SatelliTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliTrackApp.swift; sourceTree = "<group>"; };
 		9A3F97352BE3FA4000AF1CDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		9A3F97322BE3FA4000AF1CDF /* SatelliTrack */ = {
 			isa = PBXGroup;
 			children = (
+				9A01C8592BE4E122003D865A /* TimerStorage.swift */,
 				9A3F97332BE3FA4000AF1CDF /* SatelliTrackApp.swift */,
 				9A3F97412BE3FAD400AF1CDF /* MapView.swift */,
 				9A3F97432BE3FB0B00AF1CDF /* DownloadManager.swift */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3F97362BE3FA4000AF1CDF /* ContentView.swift in Sources */,
+				9A01C85A2BE4E122003D865A /* TimerStorage.swift in Sources */,
 				9A3F97422BE3FAD400AF1CDF /* MapView.swift in Sources */,
 				9A3F97342BE3FA4000AF1CDF /* SatelliTrackApp.swift in Sources */,
 				9A3F97442BE3FB0B00AF1CDF /* DownloadManager.swift in Sources */,

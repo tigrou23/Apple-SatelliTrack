@@ -39,6 +39,9 @@ struct MapView: UIViewRepresentable {
     ///   - uiView: the map view
     ///   - context: context
     func updateUIView(_ uiView: MKMapView, context: Context) {
+        
+        TimerStorage.removeTimer()
+        
         let cupertinoCoordinate = CLLocationCoordinate2D(latitude: CUPERTINO_LATITUDE, longitude: CUPERTINO_LONGITUDE)
         let span = MKCoordinateSpan(latitudeDelta: 90, longitudeDelta: 90)
         let region = MKCoordinateRegion(center: cupertinoCoordinate, span: span)
@@ -57,9 +60,11 @@ struct MapView: UIViewRepresentable {
         
         // Add the annotations and refresh them every REFRESH_FREQUENCY seconds
         updateAnnotations(uiView: uiView)
-        _ = Timer.scheduledTimer(withTimeInterval: REFRESH_FREQUENCY, repeats: true) { _ in
+        let timer_reference = Timer.scheduledTimer(withTimeInterval: REFRESH_FREQUENCY, repeats: true) { _ in
             updateAnnotations(uiView: uiView)
         }
+        TimerStorage.addTimer(timer: timer_reference)
+        
     }
     
     /// Update the annotations on the map view
