@@ -28,15 +28,11 @@ struct ContentView: View {
             }
             let message: String = String(satellites.count);
             Text("Number of satellites: \(message)")
-            Button("Reset View"){
-                updateFromFile()
-            }
-            Button("Download TLE File"){
+            Button("Reset"){
                 DownloadManager.shared.downloadFile()
                 sleep(4)
                 updateFromFile()
             }
-            
         }
     }
     
