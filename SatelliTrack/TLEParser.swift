@@ -8,6 +8,7 @@
 import Foundation
 import CoreLocation
 import SGPKit
+import UIKit
 
 /// Structure to store the satellite data
 struct Satellite {
@@ -37,6 +38,10 @@ class TLEParser {
             
             // Loop through the lines to extract the satellite data
             for line in lines {
+                print(line)
+                if line.hasPrefix("<!DOCTYPE ") {
+                    return satellites
+                }
                 if line.isEmpty { continue }
                 // If it's a name, save the name
                 if !line.hasPrefix("1 ") && !line.hasPrefix("2 ") {
